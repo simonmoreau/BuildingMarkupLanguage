@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name = "myProject">
+    <site name = "site">
+        <building name="building" TotalHeight="20" Outline="0,0 0,100 500,100 500,0">
+            <storey name="level 1" TotalHeight="2">
+                <space name ="zone 1">
+                    <space name ="first room"></space>
+                    <space>
+                        <space></space>
+                        <space></space>
+                    </space>
+                    <space></space>
+                </space>
+                <space name ="zone 2">
+                    <space></space>
+                    <space></space>
+                </space>
+            </storey>
+            <storey name="level 1" TotalHeight="2">
+                <space name ="zone 1">
+                    <space name ="first room"></space>
+                    <space></space>
+                    <space></space>
+                </space>
+                <space name ="zone 2">
+                    <space></space>
+                    <space></space>
+                </space>
+            </storey>
+        </building>
+    </site>
+</project>
