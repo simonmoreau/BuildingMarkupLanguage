@@ -2,20 +2,31 @@ using System;
 using System.Xml.Serialization;
 using System.Collections.Generic;
 
+
 namespace BuildingMarkupLanguage
 {
 	[XmlRoot(ElementName="space")]
 	public class Space {
 		[XmlAttribute(AttributeName="name")]
 		public string Name { get; set; }
+	}
+
+	[XmlRoot(ElementName="area")]
+	public class Area {
 		[XmlElement(ElementName="space")]
-		public List<Space> Spaces { get; set; }
+		public List<Space> Space { get; set; }
+		[XmlAttribute(AttributeName="name")]
+		public string Name { get; set; }
+		[XmlAttribute(AttributeName="layout")]
+		public string Layout { get; set; }
+		[XmlElement(ElementName="area")]
+		public List<Area> Areas { get; set; }
 	}
 
 	[XmlRoot(ElementName="storey")]
 	public class Storey {
-		[XmlElement(ElementName="space")]
-		public List<Space> Spaces { get; set; }
+		[XmlElement(ElementName="area")]
+		public List<Area> Areas { get; set; }
 		[XmlAttribute(AttributeName="name")]
 		public string Name { get; set; }
 		[XmlAttribute(AttributeName="TotalHeight")]
@@ -49,5 +60,5 @@ namespace BuildingMarkupLanguage
 		[XmlAttribute(AttributeName="name")]
 		public string Name { get; set; }
 	}
-}
 
+}

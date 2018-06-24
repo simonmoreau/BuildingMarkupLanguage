@@ -3,29 +3,46 @@
     <site name = "site">
         <building name="building" TotalHeight="20" Outline="0,0 0,100 500,100 500,0">
             <storey name="level 1" TotalHeight="2">
-                <space name ="zone 1">
-                    <space name ="first room"></space>
-                    <space>
-                        <space></space>
-                        <space></space>
-                    </space>
-                    <space></space>
-                </space>
-                <space name ="zone 2">
-                    <space></space>
-                    <space></space>
-                </space>
+                <area name="left wing">
+                    <area name ="app 1" layout ="flat">
+                        <space name ="living"></space>
+                        <space name ="kitchen"></space>
+                        <space name ="room 1"></space>
+                        <space name ="room 2"></space>
+                        <space name ="bath"></space>
+                    </area>
+                    <space name = "corridor"></space>
+                </area>
+                <area name ="right wing">
+                    <area name ="app 2">
+                        <space name = "living"></space>
+                        <space name="room"></space>
+                        <space name="bath"></space>
+                    </area>
+                    <space name = "corridor"></space>
+                    <space name="technical room"></space>
+                </area>
             </storey>
-            <storey name="level 1" TotalHeight="2">
-                <space name ="zone 1">
-                    <space name ="first room"></space>
-                    <space></space>
-                    <space></space>
-                </space>
-                <space name ="zone 2">
-                    <space></space>
-                    <space></space>
-                </space>
+            <storey name="level 2" TotalHeight="2">
+                <area name="left wing">
+                    <area name ="app 4" layout ="flat">
+                        <space name ="living"></space>
+                        <space name ="kitchen"></space>
+                        <space name ="room 1"></space>
+                        <space name ="room 2"></space>
+                        <space name ="bath"></space>
+                    </area>
+                    <space name = "corridor"></space>
+                </area>
+                <area name ="right wing">
+                    <area name ="app 5">
+                        <space name = "living"></space>
+                        <space name="room"></space>
+                        <space name="bath"></space>
+                    </area>
+                    <space name = "corridor"></space>
+                    <space name="technical room"></space>
+                </area>
             </storey>
         </building>
     </site>

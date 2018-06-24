@@ -24,7 +24,11 @@ namespace BuildingMarkupLanguage
             
             DrawOutline(outputPath,myProject.Site.Building.Outline);
 
-            
+            foreach (Area area in myProject.Site.Building.Storey[0].Areas)
+            {
+                
+
+            }
         }
 
         private static void DrawOutline(string outputPath, string points)
